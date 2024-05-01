@@ -9,6 +9,7 @@ class Cliente{
 
 const cliente1 = new Cliente();
 const cliente2 = new Cliente();
+const cliente3 = new Cliente();
 
 
 
@@ -22,5 +23,12 @@ cliente2.cpf = 22222190111;
 cliente2.agencia = 2001;
 cliente2.saldo = 0;
 
+
+cliente3.nome = "Rafael";
+cliente3.cpf = 3005199798;
+cliente3.agencia = 2016;
+cliente3.saldo = 0;
+
 console.log(cliente1); 
 console.log(cliente2);
+console.log(cliente3);
