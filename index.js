@@ -14,44 +14,44 @@ class ContaCorrente{
         }
     }
 
-    deposito(valor){
-        if(this.saldo = valor){
-            this.saldo + valor;
+    depositar(valor){
+        if(valor > 0){    
+            this.saldo += valor;
         }
     }
 }
 
 
 
+
+
+
+
+
 const cliente1 = new Cliente();
-const cliente2 = new Cliente();
-const cliente3 = new Cliente();
-
-
-
 cliente1.nome = "Rogerio";
 cliente1.agencia = 2001;
-cliente1.saldo = 0;
-cliente1.cpf = 11122222190;
 
+const cliente2 = new Cliente();
 cliente2.nome = "Cristiane";
 cliente2.cpf = 22222190111;
-cliente2.agencia = 2001;
-cliente2.saldo = 0;
 
-
+const cliente3 = new Cliente();
 cliente3.nome = "Rafael";
 cliente3.cpf = 3005199798;
-cliente3.agencia = 2016;
-cliente3.saldo = 0;
-
-console.log(cliente1); 
-console.log(cliente2);
-console.log(cliente3);
-
-const  contaCorrente = new ContaCorrente();
-
-contaCorrente.Rafael.deposito(200);
 
 
-console.log(contaCorrente.Rafael.saldo);
+const  contaCorrenteRafael = new ContaCorrente();
+contaCorrenteRafael.saldo = 0;
+contaCorrenteRafael.agencia = 1001;
+
+contaCorrenteRafael.depositar(100);
+contaCorrenteRafael.sacar(50);
+
+
+console.log(contaCorrenteRafael);
+
+
+
+
+
