@@ -46,6 +46,21 @@ contaCorrenteRafael.saldo = 0;
 contaCorrenteRafael.agencia = 1001;
 
 contaCorrenteRafael.depositar(100);
+
+contaCorrenteRafael.sacar(50);
+
+
+console.log(contaCorrenteRafael);
+
+
+//remover
+
+const  contaCorrenteRafael = new ContaCorrente();
+contaCorrenteRafael.saldo = 0;
+contaCorrenteRafael.agencia = 1001;
+
+contaCorrenteRafael.depositar(100);
+
 contaCorrenteRafael.sacar(50);
 
 
