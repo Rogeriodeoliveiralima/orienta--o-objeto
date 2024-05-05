@@ -37,8 +37,16 @@ cliente2.nome = "Cristiane";
 cliente2.cpf = 22222190111;
 
 const cliente3 = new Cliente();
-cliente3.nome = "Rafael";
-cliente3.cpf = 3005199798;
+cliente4.nome = "Rafaela";
+cliente3.cpf = 3005333324490;
+
+const cliente3 = new Cliente();
+cliente3.nome = "Marcio";
+cliente3.cpf = 252328218;
+
+const cliente3 = new Cliente();
+cliente3.nome = "Alexandre";
+cliente3.cpf = 3500000788;
 
 
 const  contaCorrenteRafael = new ContaCorrente();
