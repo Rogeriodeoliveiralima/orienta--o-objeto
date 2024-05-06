@@ -1,32 +1,5 @@
-class Cliente{
-    nome;
-    cpf;
-    
-}
-
-class ContaCorrente{
-    agencia;
-    saldo;
-
-    sacar(valor){
-        if(this.saldo >= valor){
-            this.saldo -= valor;
-        }
-    }
-
-    depositar(valor){
-        if(valor > 0){    
-            this.saldo += valor;
-        }
-    }
-}
-
-
-
-
-
-
-
+import{Cliente} from "./Cliente.js"
+import { ContaCorrente } from "./ContaCorrente.js";
 
 const cliente1 = new Cliente();
 cliente1.nome = "Rogerio";
@@ -37,42 +10,37 @@ cliente2.nome = "Cristiane";
 cliente2.cpf = 22222190111;
 
 const cliente3 = new Cliente();
-cliente4.nome = "Rafaela";
+cliente3.nome = "Rafael";
 cliente3.cpf = 3005333324490;
 
-const cliente3 = new Cliente();
-cliente3.nome = "Marcio";
-cliente3.cpf = 252328218;
+const cliente4 = new Cliente();
+cliente4.nome = "Marcio";
+cliente4.cpf = 252328218;
 
-const cliente3 = new Cliente();
-cliente3.nome = "Alexandre";
-cliente3.cpf = 3500000788;
+const cliente5 = new Cliente();
+cliente5.nome = "Alexandre";
+cliente5.cpf = 3500000788;
 
 
 const  contaCorrenteRafael = new ContaCorrente();
-contaCorrenteRafael.saldo = 0;
+contaCorrenteRafael._saldo = 0;
 contaCorrenteRafael.agencia = 1001;
 
 contaCorrenteRafael.depositar(100);
 
 contaCorrenteRafael.sacar(50);
 
-
-console.log(contaCorrenteRafael);
-
-
-//remover
-
-const  contaCorrenteRafael = new ContaCorrente();
-contaCorrenteRafael.saldo = 0;
-contaCorrenteRafael.agencia = 1001;
-
 contaCorrenteRafael.depositar(100);
+contaCorrenteRafael.depositar(100);
+contaCorrenteRafael.depositar(100);
+const valorSacado = contaCorrenteRafael.sacar(50);
 
-contaCorrenteRafael.sacar(50);
-
-
+console.log(valorSacado);
 console.log(contaCorrenteRafael);
+
+
+
+
 
 
 
