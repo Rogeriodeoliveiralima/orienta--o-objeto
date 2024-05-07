@@ -13,6 +13,7 @@ const cliente3 = new Cliente();
 cliente3.nome = "Rafael";
 cliente3.cpf = 3005333324490;
 
+
 const cliente4 = new Cliente();
 cliente4.nome = "Marcio";
 cliente4.cpf = 252328218;
@@ -23,20 +24,26 @@ cliente5.cpf = 3500000788;
 
 
 const  contaCorrenteRafael = new ContaCorrente();
-contaCorrenteRafael._saldo = 0;
 contaCorrenteRafael.agencia = 1001;
+contaCorrenteRafael.cliente = cliente3;
+contaCorrenteRafael.depositar(5000);
 
-contaCorrenteRafael.depositar(100);
+const conta2 = new ContaCorrente();
+conta2.cliente = cliente2;
+conta2.agencia = 102;
 
-contaCorrenteRafael.sacar(50);
-
-contaCorrenteRafael.depositar(100);
-contaCorrenteRafael.depositar(100);
-contaCorrenteRafael.depositar(100);
-const valorSacado = contaCorrenteRafael.sacar(50);
-
-console.log(valorSacado);
 console.log(contaCorrenteRafael);
+contaCorrenteRafael.transferir(2000,conta2);
+console.log(conta2);
+
+console.log(contaCorrenteRafael);
+
+
+
+
+
+
+
 
 
 
