@@ -4,10 +4,11 @@ import { ContaCorrente } from "./ContaCorrente.js";
 const cliente1 = new Cliente();
 cliente1.nome = "Rogerio";
 cliente1.agencia = 2001;
+cliente1.cpf = 250398;
 
-const cliente2 = new Cliente();
-cliente2.nome = "Cristiane";
-cliente2.cpf = 22222190111;
+//const cliente2 = new Cliente();
+//cliente2.nome = "Cristiane";
+//cliente2.cpf = 22222190111;
 
 const cliente3 = new Cliente();
 cliente3.nome = "Rafael";
@@ -29,14 +30,14 @@ contaCorrenteRafael.cliente = cliente3;
 contaCorrenteRafael.depositar(5000);
 
 const conta2 = new ContaCorrente();
-conta2.cliente = cliente2;
+conta2.cliente = cliente1;
 conta2.agencia = 102;
 
-console.log(contaCorrenteRafael);
-contaCorrenteRafael.transferir(2000,conta2);
-console.log(conta2);
 
-console.log(contaCorrenteRafael);
+let valor = 200;
+contaCorrenteRafael.depositar(1000);
+contaCorrenteRafael.transferir(valor, conta2);
+console.log(conta2._cliente);
 
 
 
