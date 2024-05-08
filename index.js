@@ -37,7 +37,7 @@ conta2.agencia = 102;
 let valor = 200;
 contaCorrenteRafael.depositar(1000);
 contaCorrenteRafael.transferir(valor, conta2);
-console.log(conta2._cliente);
+console.log(conta2._saldo);
 
 
 
