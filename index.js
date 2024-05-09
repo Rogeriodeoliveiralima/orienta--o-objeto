@@ -39,6 +39,22 @@ contaCorrenteRafael.depositar(1000);
 contaCorrenteRafael.transferir(valor, conta2);
 console.log(conta2._saldo);
 
+//remover esse codigo
+const  contaCorrenteRafael = new ContaCorrente();
+contaCorrenteRafael.agencia = 1001;
+contaCorrenteRafael.cliente = cliente3;
+contaCorrenteRafael.depositar(5000);
+
+const conta2 = new ContaCorrente();
+conta2.cliente = cliente1;
+conta2.agencia = 102;
+
+
+let valor = 200;
+contaCorrenteRafael.depositar(1000);
+contaCorrenteRafael.transferir(valor, conta2);
+console.log(conta2._saldo);
+
 
 
 
