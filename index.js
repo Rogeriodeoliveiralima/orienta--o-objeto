@@ -1,14 +1,13 @@
 import{Cliente} from "./Cliente.js"
 import { ContaCorrente } from "./ContaCorrente.js";
 
-const cliente1 = new Cliente();
-cliente1.nome = "Rogerio";
+const cliente1 = new Cliente('Rogerio,250398');
 cliente1.agencia = 2001;
-cliente1.cpf = 250398;
 
-//const cliente2 = new Cliente();
-//cliente2.nome = "Cristiane";
-//cliente2.cpf = 22222190111;
+
+const cliente2 = new Cliente('Cristiane',2222190111);
+cliente2._nome;
+cliente2._cpf;
 
 const cliente3 = new Cliente();
 cliente3.nome = "Rafael";
@@ -37,23 +36,7 @@ conta2.agencia = 102;
 let valor = 200;
 contaCorrenteRafael.depositar(1000);
 contaCorrenteRafael.transferir(valor, conta2);
-console.log(conta2._saldo);
-
-//remover esse codigo
-const  contaCorrenteRafael = new ContaCorrente();
-contaCorrenteRafael.agencia = 1001;
-contaCorrenteRafael.cliente = cliente3;
-contaCorrenteRafael.depositar(5000);
-
-const conta2 = new ContaCorrente();
-conta2.cliente = cliente1;
-conta2.agencia = 102;
-
-
-let valor = 200;
-contaCorrenteRafael.depositar(1000);
-contaCorrenteRafael.transferir(valor, conta2);
-console.log(conta2._saldo);
+console.log(conta2._cpf);
 
 
 
